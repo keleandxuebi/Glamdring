@@ -18,13 +18,13 @@ module.exports = {
   //主要是配置文件
   resolve: {
     extensions: ['', '.js', '.vue', '.css', '.less'],
-    fallback: [path.join(__dirname, '../node_modules')],
+    fallback: [path.join(__dirname, '../node_modules'), path.join(__dirname, '../src/styles')],
     alias: {
       'src': path.resolve(__dirname, '../src')
     }
   },
   resolveLoader: {
-    fallback: [path.join(__dirname, '../node_modules')]
+    fallback: [path.join(__dirname, '../node_modules'), path.join(__dirname, '../src/styles')]
   },
   module: {
     preLoaders: [

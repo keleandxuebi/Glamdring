@@ -32,8 +32,9 @@ export default {
 };
 </script>
 <style>
+#app { width: 100%; height: 100%; }
 .main {
-    position: relative;;
+    position: relative;
     top: 44px;
 }
 /* 必需 */

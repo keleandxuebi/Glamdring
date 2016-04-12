@@ -4,7 +4,7 @@ import configRouter from './config/route-config';
 import Main from './views/main.vue';
 import store from './config/store-config';
 import { sync } from 'vuex-router-sync';
-import 'bootstrap/less/bootstrap.less';
+// import 'bootstrap/less/bootstrap.less';
 import 'lodash';
 
 Vue.use(VueRouter);

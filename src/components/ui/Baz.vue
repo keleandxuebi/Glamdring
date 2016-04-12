@@ -1,3 +1,5 @@
 <template>
-    <p>This is baz!</p>
+    <div>
+        <p>This is baz!</p>
+    </div>
 </template>
