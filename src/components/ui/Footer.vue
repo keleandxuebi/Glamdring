@@ -1,5 +1,5 @@
 <template>
-    <div class="gr-header">
+    <div class="gr-footer">
         <span class="left" v-show="backFlag" @click="backHandler">返回</span>
         {{title}}
         <span class="right" v-show="optFlag" @click="optionHandler">分享</span>
@@ -7,11 +7,10 @@
 </template>
 <script>
 export default {
-    name: 'grHeader',
+    name: 'GrFooter',
     data () {
-        // console.log(this.$parent.headerTitle);
         return {
-            title: this.$parent.headerTitle || 'Glamdring Header',
+            title: this.$parent.headerTitle || 'Glamdring Footer',
             backFlag: this.$parent.backFlag,
             optFlag: this.$parent.optFlag
         };
@@ -29,7 +28,7 @@ export default {
 </script>
 <style>
 .gr-header {
-    position: absolute; top: 0; left: 0;
+    position: absolute; bottom: 0; left: 0;
     width: 100%; height: 44px;
     line-height: 44px;
     text-align: center;
