@@ -30,6 +30,9 @@ export default {
 };
 </script>
 <style>
+.view {
+    width: 100%; height: 100%;
+}
 #app { width: 100%; height: 100%; }
 .main {
     position: relative;
@@ -42,8 +45,8 @@ export default {
 /* 必需 */
 .expand-transition {
     transition: all .3s ease;
-    height: 30px;
-    padding: 10px;
+    /*height: 30px;*/
+    /*padding: 10px;*/
     background-color: #eee;
     overflow: hidden;
 }
