@@ -7,7 +7,6 @@
         <!-- use v-link directive for navigation. -->
         <div class="main">
             <a v-link="'home'">Home</a>
-            <!-- if route View is onload .v-link-active will be inject -->
             <!-- and the classname also can be rename  -->
             <a v-link="{ path: '/foo', activeClass: 'custom-active-class' }">Go to Foo</a>
             <!-- 具名路由 同时支持 router.go({name: 'one_piece', params: {barID: 001}) -->
@@ -30,27 +29,12 @@ export default {
 };
 </script>
 <style>
-.view {
-    width: 100%; height: 100%;
-}
-#app { width: 100%; height: 100%; }
-.main {
-    position: relative;
-    top: 44px;
-}
-.main a {
-    display: block;
-    height: 25px; width: 100%;
-}
 /* 必需 */
 .expand-transition {
     transition: all .3s ease;
-    /*height: 30px;*/
-    /*padding: 10px;*/
     background-color: #eee;
     overflow: hidden;
 }
-
 /* .expand-enter 定义进入的开始状态 */
 /* .expand-leave 定义离开的结束状态 */
 .expand-enter, .expand-leave {
