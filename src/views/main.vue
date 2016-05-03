@@ -6,17 +6,19 @@
         -->
         <!-- use v-link directive for navigation. -->
         <div class="main">
-            <a v-link="'home'">Home</a>
-            <!-- and the classname also can be rename  -->
-            <a v-link="{ path: '/foo', activeClass: 'custom-active-class' }">Go to Foo</a>
             <!-- 具名路由 同时支持 router.go({name: 'one_piece', params: {barID: 001}) -->
+            <a v-link="'home'">Home</a>
+            <a v-link="{ path: '/foo', activeClass: 'custom-active-class' }">Go to Foo</a>
             <a v-link="{ name: 'one_piece', params: {barID: '001'} }">Go to Bar: One Piece</a>
             <a v-link="{ path: '/user/boyang' }">Go to User: Boyang</a>
             <a v-link="{ name: 'mySpace'}">My Space</a>
         </div>
         <!-- use router-view element as route outlet -->
         <!-- important -->
-        <router-view class="view" transition="expand" transition-mode="out-in"></router-view>
+        <!-- and the classname also can be rename  -->
+        <router-view class="view" transition="expand" transition-mode="out-in">
+
+        </router-view>
     </div>
 </template>
 <script>
