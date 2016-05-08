@@ -16,9 +16,7 @@
         <!-- use router-view element as route outlet -->
         <!-- important -->
         <!-- and the classname also can be rename  -->
-        <router-view class="view" transition="expand" transition-mode="out-in">
-
-        </router-view>
+        <router-view class="view" transition="expand" transition-mode="out-in"></router-view>
     </div>
 </template>
 <script>
@@ -31,6 +29,11 @@ export default {
 };
 </script>
 <style>
+.main {
+    position: absolute; top: 44px; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
 /* 必需 */
 .expand-transition {
     transition: all .3s ease;
