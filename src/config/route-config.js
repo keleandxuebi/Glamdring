@@ -9,7 +9,13 @@ export default function (router) {
     router.map({
         '/myspace': {
             name: 'mySpace',
-            component: MySpace
+            component: MySpace,
+            subRoutes: {
+                '/aop': {
+                    name: 'aop',
+                    component: User
+                }
+            }
         },
         '/foo': {
             name: 'foo',

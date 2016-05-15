@@ -2,8 +2,10 @@
     <div>
         <Pop></Pop>
         <h3 class="h3">MySpace {{ msg }}</h3>
-        <div></div>
-        <router-view></router-view>
+        <div>
+            <a v-link="{ path: '/myspace/aop', activeClass: 'custom-active-class' }">user</a>
+        </div>
+        <router-view class="view" transition="expand" transition-mode="out-in"></router-view>
     </div>
 </template>
 <script>
