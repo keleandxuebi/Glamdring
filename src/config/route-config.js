@@ -41,7 +41,10 @@ export default function (router) {
         },
         '/user/:username': {
             name: 'username',
-            component: MySpace
+            component: {
+                // 动态参数 msgs in $route.params
+                template: '<p>username: <b>{{ $route.params.username }}</b></p>'
+            }
         },
         '/bar': {
             name: 'bar',
