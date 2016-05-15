@@ -1,21 +1,21 @@
 <template>
     <div>
-        <Go></Go>
-        <h3>MySpace {{ msg }}</h3>
+        <Pop></Pop>
+        <h3 class="h3">MySpace {{ msg }}</h3>
         <div></div>
         <router-view></router-view>
     </div>
 </template>
 <script>
 // import Vue from 'vue';
-import Go from '../../components/ui/Header.vue';
+import Pop from '../../components/ui/Header.vue';
 import { getMySpace } from '../../store/MySpace/actions';
 import { getSpaceData } from '../../store/MySpace/getters';
 import Store from '../../config/store-config';
 
 export default {
     Store,
-    components: { Go }, // 麻痹的用自定义不解析？？？？
+    components: { Pop }, // 麻痹的用自定义不解析？？？？
     data () {
         return {
             headerTitle: 'MySpace',
@@ -54,4 +54,9 @@ export default {
 
 </script>
 <style>
+.h3 {
+    position: relative; top: 44px;
+    width: 100%; height: 100px;
+
+}
 </style>
