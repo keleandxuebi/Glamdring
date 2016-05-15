@@ -1,6 +1,7 @@
 import Foo from '../components/ui/Foo.vue';
 import Baz from '../components/ui/Baz.vue';
 import Bar from '../components/ui/Bar.vue';
+import User from '../components/ui/User.vue';
 import MySpace from '../views/MySpace/index.vue';
 
 export default function (router) {
@@ -41,10 +42,7 @@ export default function (router) {
         },
         '/user/:username': {
             name: 'username',
-            component: {
-                // 动态参数 msgs in $route.params
-                template: '<p>username: <b>{{ $route.params.username }}</b></p>'
-            }
+            component: User
         },
         '/bar': {
             name: 'bar',
