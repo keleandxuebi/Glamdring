@@ -2,8 +2,8 @@
     <div>
         <Pop></Pop>
         <h3 class="h3">MySpace {{ msg }}</h3>
-        <div>
-            <a v-link="'aop'">user</a>
+        <div class="pop">
+            <a v-link="{ name: 'aop', append: true }">AOED</a>
         </div>
         <router-view class="view" transition="expand" transition-mode="out-in"></router-view>
     </div>
@@ -60,5 +60,9 @@ export default {
     position: relative; top: 44px;
     width: 100%; height: 100px;
 
+}
+.pop {
+    display: block;
+    position: relative; top: 22px;
 }
 </style>

@@ -11,6 +11,12 @@ export default function (router) {
             name: 'mySpace',
             component: MySpace,
             subRoutes: {
+                '/a': {
+                    name: 'user',
+                    component: {
+                        template: '<div>afdsaf</div>'
+                    }
+                },
                 '/aop': {
                     name: 'aop',
                     component: User
