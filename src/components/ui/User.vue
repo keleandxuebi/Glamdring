@@ -1,8 +1,8 @@
 <template>
     <div>
         <Pop></Pop>
-        <p>username: <b>{{ $route.params.username }}</b></p>
-        <h1>Hello, ShangBoyang</h1>
+        <p class="user-p">username: <b>{{ $route.params.username }}</b></p>
+        <h1 class="user-h1">Hello, ShangBoyang</h1>
     </div>
 </template>
 <script>
@@ -18,5 +18,10 @@ export default {
 };
 </script>
 <style media="screen">
-
+.user-p {
+    position: relative; top: 44px;
+}
+.user-h1 {
+    position: relative; top: 60px;
+}
 </style>
